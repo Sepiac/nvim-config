@@ -17,10 +17,10 @@ return {
     "neovim/nvim-lspconfig",
     config = function()
       local lspconfig = require('lspconfig')
-      lspconfig.lua_ls.setup{}
-      lspconfig.jsonls.setup{}
-      lspconfig.tsserver.setup{}
-      lspconfig.gopls.setup{}
+      lspconfig.lua_ls.setup {}
+      lspconfig.jsonls.setup {}
+      lspconfig.tsserver.setup {}
+      lspconfig.gopls.setup {}
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
       vim.keymap.set('n', '<leader>r', vim.lsp.buf.rename, {})
       vim.keymap.set('n', '<leader>kf', vim.lsp.buf.format, {})
