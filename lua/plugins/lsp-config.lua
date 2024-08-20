@@ -13,7 +13,8 @@ return {
           "lua_ls",
           "jsonls",
           "tsserver",
-          "gopls"
+          "gopls",
+          "bashls",
         }
       })
     end
@@ -26,6 +27,9 @@ return {
       lspconfig.jsonls.setup {}
       lspconfig.tsserver.setup {}
       lspconfig.gopls.setup {}
+      lspconfig.bashls.setup {
+        filetypes = { 'sh', 'zsh' }
+      }
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
       vim.keymap.set('n', '<leader>r', vim.lsp.buf.rename, {})
       vim.keymap.set({ 'n', 'v' }, '<leader>kf', vim.lsp.buf.format, {})
