@@ -5,7 +5,7 @@ return {
 
     codewindow.apply_default_keybinds()
     codewindow.setup({
-      auto_enable = true,
+      auto_enable = false,
     })
     -- codewindow.apply_default_keybinds()
   end,
