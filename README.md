@@ -4,7 +4,7 @@ My personal nvim config
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use git to install this nvim config.
 
 ```zsh
 git clone https://github.com/Sepiac/nvim-config.git ~/.config/nvim
