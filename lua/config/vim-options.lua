@@ -7,6 +7,7 @@ vim.keymap.set('n', '<leader>,', '@@')
 vim.keymap.set('v', '<leader>s"', 'xi""<esc>hp')
 vim.keymap.set('v', '<leader>s{', 'xi{}<esc>hp')
 vim.keymap.set('v', '<leader>s(', 'xi()<esc>hp')
+vim.keymap.set('n', '<leader>b', 'A{<esc>o}<esc>O')
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
