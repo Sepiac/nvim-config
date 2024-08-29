@@ -6,7 +6,7 @@ return {
     local alpha = require("alpha")
     local dashboard = require("alpha.themes.dashboard")
     dashboard.section.buttons.val = {
-      dashboard.button("r", "  > Recent", "<CMD>Telescope oldfiles<CR>"),
+      dashboard.button("r", "  > Recent", "<CMD>Telescope oldfiles<CR>"),
       dashboard.button("n", "  > Open Neotree", "<CMD>Neotree<CR>"),
       dashboard.button("u", "  > Update Plugins", "<CMD>Lazy update<CR>"),
       dashboard.button("g", "󰊢  > Git", "<CMD>LazyGit<CR>"),
