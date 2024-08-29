@@ -57,5 +57,7 @@ return {
       [[                                                                       ]],
     }
     alpha.setup(dashboard.opts)
+
+    vim.keymap.set('n', '<leader>h', '<cmd>Alpha<cr>')
   end
 };
