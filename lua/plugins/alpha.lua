@@ -4,7 +4,13 @@ return {
 
   config = function()
     local alpha = require("alpha")
-    local dashboard = require("alpha.themes.startify")
+    local dashboard = require("alpha.themes.dashboard")
+    dashboard.section.buttons.val = {
+      dashboard.button("r", "  > Recent", ":Telescope oldfiles<CR>"),
+      dashboard.button("u", "  > Update Plugins", ":Lazy update<CR>"),
+      dashboard.button("s", "  > Settings", ":cd ~/.config/nvim<CR>:Neotree<CR>"),
+      dashboard.button("q", "  > Quit", ":qa!<CR>"),
+    }
     dashboard.section.header.val = {
       [[         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀    ⠀⠀]],
       [[         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀    ⠀⠀]],
