@@ -4,6 +4,9 @@ vim.keymap.set('n', '<leader>q', '<cmd>qa<cr>')
 vim.keymap.set('n', '<leader>x', '<cmd>q<cr>')
 vim.keymap.set('n', '<leader>s', 'i¯\\_(ツ)_/¯<Esc>')
 vim.keymap.set('n', '<leader>,', '@@')
+vim.keymap.set('v', '<leader>s"', 'xi""<esc>hp')
+vim.keymap.set('v', '<leader>s{', 'xi{}<esc>hp')
+vim.keymap.set('v', '<leader>s(', 'xi()<esc>hp')
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
