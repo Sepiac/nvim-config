@@ -8,6 +8,7 @@ return {
     dashboard.section.buttons.val = {
       dashboard.button("r", "  > Recent", ":Telescope oldfiles<CR>"),
       dashboard.button("u", "  > Update Plugins", ":Lazy update<CR>"),
+      dashboard.button("g", "󰊢  > Git", ":LazyGit<CR>"),
       dashboard.button("s", "  > Settings", ":cd ~/.config/nvim<CR>:Neotree<CR>"),
       dashboard.button("q", "  > Quit", ":qa!<CR>"),
     }
