@@ -6,11 +6,11 @@ return {
     local alpha = require("alpha")
     local dashboard = require("alpha.themes.dashboard")
     dashboard.section.buttons.val = {
-      dashboard.button("r", "  > Recent", ":Telescope oldfiles<CR>"),
-      dashboard.button("u", "  > Update Plugins", ":Lazy update<CR>"),
-      dashboard.button("g", "󰊢  > Git", ":LazyGit<CR>"),
-      dashboard.button("s", "  > Settings", ":cd ~/.config/nvim<CR>:Neotree<CR>"),
-      dashboard.button("q", "  > Quit", ":qa!<CR>"),
+      dashboard.button("r", "  > Recent", "<CMD>Telescope oldfiles<CR>"),
+      dashboard.button("u", "  > Update Plugins", "<CMD>Lazy update<CR>"),
+      dashboard.button("g", "󰊢  > Git", "<CMD>LazyGit<CR>"),
+      dashboard.button("s", "  > Settings", "<CMD>cd ~/.config/nvim<CR><CMD>Neotree<CR>"),
+      dashboard.button("q", "  > Quit", "<CMD>qa!<CR>"),
     }
     dashboard.section.header.val = {
       [[         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀    ⠀⠀]],
