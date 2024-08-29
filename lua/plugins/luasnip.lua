@@ -7,6 +7,24 @@ return {
     "rafamadriz/friendly-snippets",
     config = function()
       require("luasnip.loaders.from_vscode").lazy_load()
+      local ls = require "luasnip"
+
+      vim.keymap.set(
+        { 'i' }, "<c-k>",
+        function()
+          if ls.expand_or_jumpable() then
+            ls.expand_or_jump()
+          end
+        end
+      )
+      vim.keymap.set(
+        { 'i' }, "<c-j>",
+        function()
+          if ls.jumpable(-1) then
+            ls.jump(-1)
+          end
+        end
+      )
     end,
   },
   {
