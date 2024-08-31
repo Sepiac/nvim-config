@@ -2,13 +2,16 @@ return {
   'goolord/alpha-nvim',
   dependencies = { 'echasnovski/mini.icons' },
 
+
+
+
   config = function()
     local alpha = require("alpha")
     local dashboard = require("alpha.themes.dashboard")
     dashboard.section.buttons.val = {
       dashboard.button("r", "  > Recent", "<CMD>Telescope oldfiles<CR>"),
       dashboard.button("n", "  > Neotree", "<CMD>Neotree<CR>"),
-      dashboard.button("e", "  > New File","<CMD>ene <CR>"),
+      dashboard.button("e", "  > New File", "<CMD>ene <CR>"),
       dashboard.button("g", "󰊢  > Git", "<CMD>LazyGit<CR>"),
       dashboard.button("u", "  > Update Plugins", "<CMD>Lazy update<CR>"),
       dashboard.button("s", "  > Settings", "<CMD>cd ~/.config/nvim<CR><CMD>Neotree<CR>"),
