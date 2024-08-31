@@ -1,7 +1,7 @@
 return {
   {
     'maxmx03/solarized.nvim',
-    lazy = false,
+    lazy = true,
     priority = 1000,
     config = function()
       vim.o.background = 'dark' -- or 'light'
@@ -23,5 +23,15 @@ return {
       })
       vim.cmd.colorscheme "catppuccin"
     end
-  }
+  },
+  {
+    "scottmckendry/cyberdream.nvim",
+    lazy = false,
+    config = function()
+      require("cyberdream").setup({
+        transparent=true
+      })
+      vim.cmd.colorscheme "cyberdream"
+    end
+  },
 }
