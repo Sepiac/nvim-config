@@ -44,6 +44,10 @@ It has a case of the Mondays.
 
 Use git to install this nvim config.
 
+### Optionial
+
+For best results, install a [Nerd Font](https://www.nerdfonts.com/#home) and set it as your terimal font.
+
 ```zsh
 git clone https://github.com/Sepiac/nvim-config.git ~/.config/nvim
 ```
