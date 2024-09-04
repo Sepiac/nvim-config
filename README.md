@@ -42,25 +42,25 @@ It has a case of the Mondays.
 
 ## Installation
 
-Use git to install this nvim config.
+use git to install this nvim config.
 
-### Optionial
+### optionial
 
-For best results, install a [Nerd Font](https://www.nerdfonts.com/#home) and set it as your terimal font.
+for best results, install a [nerd font](https://www.nerdfonts.com/#home) and set it as your terimal font.
 
 ```zsh
-git clone https://github.com/Sepiac/nvim-config.git ~/.config/nvim
+git clone https://github.com/sepiac/nvim-config.git ~/.config/nvim
 ```
-## Default Mappings
+## default mappings
 
-The leader key is mapped to \<Space> by default.
+the leader key is mapped to \<space> by default.
 
-| Mapping      | Mode | Action                                          | Plugin/Source                                                   |
+| mapping      | mode | action                                          | plugin/source                                                   |
 |--------------|------|-------------------------------------------------|-----------------------------------------------------------------|
-| \<leader>h   | n    | Returns to the home screen                      | [alpha.nvim](https://github.com/goolord/alpha-nvim)             |
-| \<leader>tm  | n    | Toggle table mode                               | [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode) |
-| jj           | i    | Activates Normal Mode                           | builtin                                                         |
-| \<leader>w   | n    | Writes the current buffer                       | builtin                                                         |
+| \<leader>h   | n    | returns to the home screen                      | [alpha.nvim](https://github.com/goolord/alpha-nvim)             |
+| \<leader>tm  | n    | toggle table mode                               | [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode) |
+| jj           | i    | activates normal mode                           | builtin                                                         |
+| \<leader>w   | n    | writes the current buffer                       | builtin                                                         |
 | \<leader>q   | n    | quits neovim entirely                           | builtin                                                         |
 | \<leader>x   | n    | quits current buffer                            | builtin                                                         |
 | \<leader>,   | n    | repeats the last macro                          | builtin                                                         |
@@ -81,3 +81,5 @@ The leader key is mapped to \<Space> by default.
 | \<leader>kf  | n v  | format file (or selection in visual mode)       | builtin (lsp)                                                   |
 | gd           | n    | get definition                                  | builtin (lsp)                                                   |
 | \<leader>ca  | n v  | activate code actions                           | builtin (lsp)                                                   |
+| s            | n v  | begin searching forward                         | [leap](https://github.com/ggandor/leap.nvim)                    |
+| S            | n v  | begin searching backward                        | [leap](https://github.com/ggandor/leap.nvim)                                                        |
