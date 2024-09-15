@@ -12,7 +12,6 @@ return {
         ensure_installed = {
           "lua_ls",
           "jsonls",
-          "tsserver",
           "gopls",
           "bashls",
         }
@@ -25,7 +24,6 @@ return {
       local lspconfig = require('lspconfig')
       lspconfig.lua_ls.setup {}
       lspconfig.jsonls.setup {}
-      lspconfig.tsserver.setup {}
       lspconfig.gopls.setup {}
       lspconfig.bashls.setup {
         filetypes = { 'sh', 'zsh' }
