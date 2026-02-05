@@ -1,5 +1,5 @@
 return {
-  "ggandor/leap.nvim",
+  "https://codeberg.org/andyg/leap.nvim",
   config = function()
     require('leap').create_default_mappings()
     -- The below settings make Leap's highlighting closer to what you've been
