@@ -21,10 +21,10 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      vim.lspconfig("lua_ls", {})
-      vim.lspconfig("jsonls", {})
-      vim.lspconfig("gopls", {})
-      vim.lspconfig("bashls", {
+      vim.lsp.config("lua_ls", {})
+      vim.lsp.config("jsonls", {})
+      vim.lsp.config("gopls", {})
+      vim.lsp.config("bashls", {
         filetypes = { 'sh', 'zsh' }
       })
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})

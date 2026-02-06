@@ -1,10 +1,12 @@
 return {
   "https://codeberg.org/andyg/leap.nvim",
   config = function()
-    require('leap').create_default_mappings()
+    -- require('leap').create_default_mappings()
     -- The below settings make Leap's highlighting closer to what you've been
     -- used to in Lightspeed.
 
+    vim.keymap.set({'n', 'x', 'o'}, 's', '<Plug>(leap)')
+    vim.keymap.set('n',             'S', '<Plug>(leap-from-window)')
     vim.api.nvim_set_hl(0, 'LeapBackdrop', { link = 'Comment' }) -- or some grey
     vim.api.nvim_set_hl(0, 'LeapMatch', {
       -- For light themes, set to 'black' or similar.
